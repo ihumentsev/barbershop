@@ -171,6 +171,7 @@ ul{
 }
 .contact-btn.white {
     color: #303030;
+    margin: 0;
 }
 
 .contact-btn.white:hover{
@@ -393,13 +394,6 @@ margin-left: auto;
     border-radius: 4px;
     transition: transform 1s ease;
 
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
-
-    @media screen and (min-width:1200px) {
-        width: 528px;
-    }
 }
 
 .backdrop-modal.is-active{
@@ -443,6 +437,18 @@ margin-left: auto;
 .contact-wraper__mobile{
     margin-top: 64px;
 }
+.contact-link_mobile{
+    display: inline-flex;
+    color: #303030;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+}
 
 .social-wraper__mobile{
     display: flex;
@@ -473,4 +479,84 @@ margin-left: auto;
 }
 .social-wraper__mobile a:hover{
     color: #FF6C00;
+}
+
+.about-section {
+    padding: 130px 0;
+    
+}
+.about-content__wraper{
+    display: flex;
+}
+
+.about-image__wraper{
+    display: none;
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+        }
+                @media screen and (min-width:1200px) {
+                    display: flex;
+                    flex-direction: row;
+                }
+}
+.about-image__wraper img{
+    margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+}
+
+
+
+.about-text__wraper{
+    padding: 0 30px;
+@media screen and (min-width:768px) {
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 64px;
+    }
+}
+
+.about-text__wraper h2{
+    color: #303030;
+        font-family: Open Sans;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+}
+
+.about-text__wraper h3{
+    color: #303030;
+        font-family: Raleway;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.4px;
+        margin-top: 0;
+            margin-bottom: 20px;
+        @media screen and (min-width:1200px) {
+                font-size: 42px;
+            }
+}
+
+.about-text__wraper p{
+    color: #555;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.28px;
+        margin-bottom: 50px;
+        margin-top: 0;
 }
