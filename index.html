@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a class="logo" href="#">
+            <img src="assets/images/Logo (1).svg" />
+          </a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">О нас</li>
+            <li class="header-nav__item">Услуги и цены</li>
+            <li class="header-nav__item">Мастера</li>
+            <li class="header-nav__item">Контакты</li>
+          </ul>
+          <div class="contact-wraper">
+            <a class="contact-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+            <button class="contact-btn">онлайн-запись</button>
+          </div>
+        </nav>
+        <div class="header-mobile">
+          <a class="logo" href="#">
+            <img src="assets/images/Logo.svg" />
+          </a>
+          <button class="mobile-menu__btn" data-menu-button></button>
+        </div>
+        <!-- <button>      </button> -->
+      </div>
+    </header>
+    <main>
+      <!-- BackDrop -->
+      <div class="backdrop is-hidden" data-drop>
+        <div class="backdrop-modal" data-menu>
+          <button class="close-btn" data-modal-close></button>
+          <nav class="nav-mobile">
+            <ul class="nav-list__mobile">
+              <li class="nav-item__mobile">О нас</li>
+              <li class="nav-item__mobile">Услуги и цены</li>
+              <li class="nav-item__mobile">Мастера</li>
+              <li class="nav-item__mobile">Контакты</li>
+            </ul>
+            <div class="contact-wraper__mobile">
+              <a class="contact-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+              <button class="contact-btn white">онлайн-запись</button>
+            </div>
+            <div class="social-bar__mobile">
+              <div class="social-wraper__mobile">
+                <a href="#"> Instagram</a> <a href="#"> Youtube</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- section Hero -->
+      <div class="container">
+        <section class="hero-section">
+          <div class="social-bar">
+            <div class="social-wraper">
+              <a href="#"> Instagram</a> <a href="#"> Youtube</a>
+            </div>
+          </div>
+          <div class="title-box">
+            <p>A hair salon for men in Kyiv</p>
+            <h1>BarberShop</h1>
+            <p>
+              We are experts in trendy men's haircuts. We work quickly,
+              carefully, and tastefully.
+            </p>
+          </div>
+          <div class="slider">
+            <div class="slider-line">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/images/Slider1Tablet.jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="assets/images/Slider1desk.jpg"
+                />
+                <img src="assets/images/Slider1.jpg" alt="Изображение" />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/images/Slider2Tablet.jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="assets/images/Slider1desk.jpg"
+                />
+                <img src="assets/images/Slider2.jpg" alt="Изображение" />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/images/Slider3Tablet.jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="assets/images/Slider3desk.jpg"
+                />
+                <img src="assets/images/Slider3.jpg" alt="Изображение" />
+              </picture>
+            </div>
+            <div class="btn-container">
+              <button class="button-prev slide-prev">Назад</button>
+              <button class="button-next slide-next">Вперед</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer><div class="container"></div></footer>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
