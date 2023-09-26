@@ -15,10 +15,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="hero-container">
         <nav class="header-nav">
           <a class="logo" href="#">
-            <img src="assets/images/Logo (1).svg" />
+            <img src="assets/images/Logo2.svg" alt="logo" />
           </a>
           <ul class="header-nav__list">
             <li class="header-nav__item">О нас</li>
@@ -35,11 +35,10 @@
         </nav>
         <div class="header-mobile">
           <a class="logo" href="#">
-            <img src="assets/images/Logo.svg" />
+            <img src="assets/images/Logo.svg" alt="logo" />
           </a>
           <button class="mobile-menu__btn" data-menu-button></button>
         </div>
-        <!-- <button>      </button> -->
       </div>
     </header>
     <main>
@@ -69,8 +68,9 @@
         </div>
       </div>
       <!-- section Hero -->
-      <div class="container">
         <section class="hero-section">
+           <div class="hero-container"> 
+           <div class="hero-wraper"> 
           <div class="social-bar">
             <div class="social-wraper">
               <a href="#"> Instagram</a> <a href="#"> Youtube</a>
@@ -84,6 +84,7 @@
               carefully, and tastefully.
             </p>
           </div>
+          
           <div class="slider">
             <div class="slider-line">
               <picture>
@@ -125,51 +126,176 @@
               <button class="button-next slide-next">Вперед</button>
             </div>
           </div>
+          </div>
+          </div>
         </section>
         <!-- section About -->
         <section class="about-section">
-        <div class="container">
+          <div class="container">
             <div class="about-content__wraper">
-            <div class="about-image__wraper">
+              <div class="about-image__wraper">
                 <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="assets/images/imglaptop1.jpg"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="assets/images/imgdesk1.jpg"
-                />
-                <img src="assets/images/imglaptop1.jpg" alt="Изображение" />
-              </picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="assets/images/imglaptop1.jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="assets/images/imgdesk1.jpg"
+                  />
+                  <img src="assets/images/imglaptop1.jpg" alt="Изображение" />
+                </picture>
                 <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="assets/images/imglaptop2.jpg"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="assets/images/imgdesk2.jpg"
-                />
-                <img src="assets/images/imglaptop2.jpg" alt="Изображение" />
-              </picture>
-            </div>
-            <div class="about-text__wraper">
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="assets/images/imglaptop2.jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="assets/images/imgdesk2.jpg"
+                  />
+                  <img src="assets/images/imglaptop2.jpg" alt="Изображение" />
+                </picture>
+              </div>
+              <div class="about-text__wraper">
                 <h2>О НАС</h2>
-                <h3>Лучший Барбершоп
-твоего города</h3>
-<p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам. <br/> <br/>Мы команда, которая никогда не останавливается на достигнутом 
-и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
-то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-<button class="contact-btn white">онлайн-запись</button>
+                <h3>Лучший Барбершоп твоего города</h3>
+                <p>
+                  Если ты хочешь добавить в свой образ больше уверенности – тебе
+                  точно к нам. <br />
+                  <br />Мы команда, которая никогда не останавливается на
+                  достигнутом и жаждет перемен. И когда ты попадешь в руки
+                  нашего мастера, то уже никогда не сможешь быть прежним. Мы
+                  команда, которая всегда с клиентами "на одной волне". Поэтому,
+                  мы всегда готовы усовершенствовать каждого, кто к нам
+                  приходит!
+                </p>
+                <button class="contact-btn white">онлайн-запись</button>
+              </div>
             </div>
-        </div>
-        </div>
+          </div>
+        </section>
+<!-- section price -->
+<section class="price-section">
+          <div class="overlay-section">
+            <div class="container">
+            <h2>Проведи время в компании лучших мастеров</h2>
+            <h3>Услуги и цены</h3>
+            <div class="price-wraper__mobile">
+<ul class="price-list">
+    <li class="price-item">
+        <p class="price-text">Мужская стрижка</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 300 грн.</p>
+        
+    </li>
+    <li class="price-item">
+        <p class="price-text">Стрижка бороды</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+        
+    </li>
+    <li class="price-item">
+        <p class="price-text">Стрижка усов</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+        
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Бритье опасной бритвой</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Cтрижка у стажера</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 50 грн.</p>
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Стрижка под насадку</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Детская стрижка (до 12 лет)</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 300 грн.</p>
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Камуфлирование седины</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+    </li>
+</ul>
+            </div>
+            <div class="price-wraper">
+                <ul class="price-list">
+    <li class="price-item">
+        <p class="price-text">Мужская стрижка</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 300 грн.</p>
+        
+    </li>
+    <li class="price-item">
+        <p class="price-text">Стрижка бороды</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+        
+    </li>
+    <li class="price-item">
+        <p class="price-text">Стрижка усов</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+        
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Бритье опасной бритвой</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+    </li>
+    
+</ul>
+<ul class="price-list__second">
+    <li class="price-item">
+        
+        <p class="price-text">Cтрижка у стажера</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 50 грн.</p>
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Стрижка под насадку</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Детская стрижка (до 12 лет)</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 300 грн.</p>
+    </li>
+    <li class="price-item">
+        
+        <p class="price-text">Камуфлирование седины</p>
+        <span class="price-line"></span>
+        <p class="price-text">от 200 грн.</p>
+    </li>
+</ul>
+            </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
     <footer><div class="container"></div></footer>
     <script src="js/slider.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/priceShow.js"></script>
   </body>
 </html>
