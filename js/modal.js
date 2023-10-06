@@ -4,10 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
     closeModal: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-menu]"),
     backdrop: document.querySelector("[data-drop]"),
+    links: document.querySelectorAll("[data-link]"),
   };
 
   refs.openModal.addEventListener("click", toggleModal);
   refs.closeModal.addEventListener("click", toggleModal);
+  refs.links.forEach(link => {
+    link.addEventListener("click", toggleModal);
+});
+  
 
   async function toggleModal() {
     if (refs.modal.classList.contains("is-active")) {
